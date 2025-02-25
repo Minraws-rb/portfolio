@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Navigation Bar -->
   <nav>
     <ul>
@@ -24,62 +25,58 @@
   <!-- Home Section -->
   <section id="home" class="section">
     <div class="container">
-      <h1>Hi, I'm Swarnim Ranabhat</h1>
-      <p>Computer Engineering Student | ML & Robotics Enthusiast</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <img src="images/nep.jpg" alt="Background Image" class="background-img" />
+      <div class="home-text">
+        <h1>Hi, I'm Swarnim Ranabhat</h1>
+        <p>Computer Engineering Student | ML & Robotics Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
     </div>
   </section>
   
-<!-- About Section -->
-<section id="about" class="section">
-  <div class="container about-container">
-    <!-- Photo Section -->
-    <div class="about-img">
-      <img src="swar.jpg" alt="Your Name" />
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container about-container">
+      <div class="about-img">
+        <img src="images/swar.jpg" alt="Swarnim Ranabhat" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm a first-year computer engineering student at WRC Nepal with a passion for machine learning and robotics. 
+          I love building projects that solve real-world problems and exploring new technologies.
+        </p>
+      </div>
     </div>
-    <!-- Text Section -->
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        I'm a first-year computer engineering student at WRC Nepal with a passion for machine learning and robotics. I love building projects that solve real-world problems and exploring new technologies.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
 
-
-  
-  <!-- Projects Section with Slideshow -->
+  <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
       <div class="slideshow-container">
-        <!-- Slide 1 -->
         <div class="mySlides fade">
-          <img src="boat2.jpg" style="width:100%" alt="Project 1" />
+          <img src="images/boat2.jpg" alt="Project 1" />
           <div class="caption">
             <h3>2nd Hand Car Price Predicting Model</h3>
-            <p>A machine learning project that predict the price of used car using different features like Mileage, Model, Age, Engine type.</p>
+            <p>A machine learning project that predicts the price of used cars using features like Mileage, Model, Age, and Engine type.</p>
             <a href="#" class="btn">View on GitHub</a>
           </div>
         </div>
         
-        <!-- Slide 2 -->
         <div class="mySlides fade">
-          <img src="boat.jpg" style="width:100%" alt="Project 2" />
+          <img src="images/boat.jpg" alt="Project 2" />
           <div class="caption">
             <h3>Path Finding Boat</h3>
-            <p>A robotics project using Arduino and sensors which can find its own path unlike me.</p>
+            <p>A robotics project using Arduino and sensors which can find its own path.</p>
             <a href="#" class="btn">View on GitHub</a>
           </div>
         </div>
         
-        <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
-      <!-- Dots for navigation -->
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -96,7 +93,7 @@
         <li>C++</li>
         <li>Machine Learning</li>
         <li>Robotics</li>
-        <li>Graphics Designer</li>
+        <li>Graphics Design</li>
         <li>Arduino</li>
       </ul>
     </div>
@@ -106,20 +103,19 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Feel free to reach out for collaborations or just a chat!</p>
       <ul class="contact-links">
         <li><a href="mailto:swarnimranabhat4@gmail.com">Email</a></li>
         <li><a href="https://github.com/minraws-rb">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/">LinkedIn</a></li>
+        <li><a href="https://linkedin.com/in/your-profile">LinkedIn</a></li>
       </ul>
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Swarnim Ranabhat. All rights reserved.</p>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
