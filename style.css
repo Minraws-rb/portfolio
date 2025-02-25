@@ -93,7 +93,7 @@ html {
 
 /* Home Section */
 #home {
-  background: url('nep.jpg') no-repeat center center/cover;
+  background: url('/photos/nep.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   min-height: 100vh;
