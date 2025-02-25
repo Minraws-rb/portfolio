@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="container">
+      <h1>Hi, I'm [Your Name]</h1>
+      <p>Computer Engineering Student | ML & Robotics Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a first-year computer engineering student at WRC Nepal with a passion for machine learning and robotics. 
+        I love building projects that solve real-world problems and exploring new technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="assets/images/project1.jpg" alt="Project 1">
+          <h3>Image Classification</h3>
+          <p>A machine learning project that classifies images using TensorFlow.</p>
+          <a href="#" class="btn">View on GitHub</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="assets/images/project2.jpg" alt="Project 2">
+          <h3>Line Following Robot</h3>
+          <p>A robotics project using Arduino and sensors.</p>
+          <a href="#" class="btn">View on GitHub</a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>C++</li>
+        <li>Machine Learning</li>
+        <li>Robotics</li>
+        <li>HTML/CSS/JavaScript</li>
+        <li>TensorFlow</li>
+        <li>Arduino</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or just a chat!</p>
+      <ul class="contact-links">
+        <li><a href="mailto:youremail@example.com">Email</a></li>
+        <li><a href="https://github.com/yourusername">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
