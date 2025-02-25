@@ -2,22 +2,24 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* About Section: Side by Side Layout */
 .about-container {
   display: flex;
-  flex-wrap: wrap; /* Allows the layout to adjust on smaller screens */
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 
 /* Style for the photo */
 .about-img {
-  flex: 0 0 250px; /* Fix the width of the image container */
+  flex: 0 0 250px;
 }
+
 .about-img img {
-  width: 100%;       /* Make the image fill its container */
-  max-width: 250px;  /* Prevent the image from growing too large */
-  border-radius: 50%; /* Circular image */
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -43,19 +45,22 @@ body {
 .section {
   padding: 60px 0;
 }
+
 h1 {
   color: #d2cfcf;
 }
- h2, h3 {
+
+h2, h3 {
   color: #444;
 }
+
 /* Navigation Bar */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Transparent navbar */
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   z-index: 1000;
   transition: background 0.3s ease-in-out;
@@ -73,7 +78,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff; /* Default color is white */
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   padding: 8px 15px;
@@ -82,7 +87,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff6347; /* Turns tomato red on hover */
+  color: #ff6347;
   transform: scale(1.1);
 }
 
@@ -110,7 +115,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -142,6 +147,7 @@ html {
   background: #e5533d;
   transform: scale(1.05);
 }
+
 /* Projects Section - Slideshow */
 .slideshow-container {
   position: relative;
