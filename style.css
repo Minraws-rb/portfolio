@@ -93,16 +93,12 @@ nav ul li a:hover {
 
 /* Home Section */
 #home {
-  color: #e7e9f7;
-  text-align: center;
-  min-height: 100vh; /* Cover the full viewport */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  padding-top: 60px; /* Prevents content from being hidden behind navbar */
-  z-index: 1;
+  height: 100vh; /* Ensures the section takes full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #home::before {
@@ -123,22 +119,36 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -2; /* Behind overlay */
+  z-index: -1; /* Ensures the image stays in the background */
 }
 
 /* Background Image */
 .home-bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center; /* Ensures the image is centered */
-  z-index: -1; /* Keeps it behind the text */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
 }
-
-
+.home-text {
+  z-index: 1; /* Makes sure the text stays above the image */
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+.home-text .btn {
+  background: #ff6347;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.home-text .btn:hover {
+  background: #e5533d;
+  transform: scale(1.05);
+}
 
 /* Smooth Scroll Effect */
 html {
