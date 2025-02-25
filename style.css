@@ -355,3 +355,63 @@ footer {
   background-color: #242424;
   transform: scale(1.05);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust container width */
+  .container {
+    width: 90%;
+  }
+  
+  /* Stack the About section vertically */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-img {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust Home Section for smaller screens */
+  #home {
+    height: auto;
+    padding: 80px 0;
+  }
+  .home-text {
+    font-size: 1.2em;
+  }
+  
+  /* Make slideshow images larger on mobile */
+  .mySlides img {
+    max-width: 90%;
+  }
+  
+  /* Optional: Stack nav items if needed */
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2, h3 {
+    font-size: 1.3em;
+  }
+  .home-text {
+    font-size: 1em;
+  }
+  .btn, .home-text .btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  /* Reduce padding for sections */
+  .section {
+    padding: 40px 0;
+  }
+}
