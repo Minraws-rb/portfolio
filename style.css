@@ -6,19 +6,19 @@ html {
 /* About Section: Side by Side Layout */
 .about-container {
   display: flex;
-  flex-wrap: wrap; /* Allows the layout to adjust on smaller screens */
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 
 /* Style for the photo */
 .about-img {
-  flex: 0 0 250px; /* Fix the width of the image container */
+  flex: 0 0 250px;
 }
 .about-img img {
-  width: 100%;       /* Make the image fill its container */
-  max-width: 250px;  /* Prevent the image from growing too large */
-  border-radius: 50%; /* Circular image */
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -47,22 +47,23 @@ body {
 
 h1 {
   color: #d7dff3;
+  font-size: 2em; /* Reduced font size */
 }
 
 h2, h3 {
   color: #3e4246;
+  font-size: 1.5em; /* Reduced font size */
 }
 
-/* Navigation Bar */
 /* Navigation Bar */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent navbar */
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
-  z-index: 1000; /* Ensure it's above everything */
+  z-index: 1000;
   transition: background 0.3s ease-in-out;
 }
 
@@ -94,7 +95,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
   position: relative;
-  height: 100vh; /* Ensures the section takes full height of the viewport */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,43 +109,44 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
 
-/* Image container */
 .home-image-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensures the image stays in the background */
+  z-index: -1;
 }
 
-/* Background Image */
 .home-bg-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-fit: cover;
 }
+
 .home-text {
-  z-index: 1; /* Makes sure the text stays above the image */
+  z-index: 1;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em; /* Reduced font size */
   font-weight: bold;
 }
+
 .home-text .btn {
   background: #ff6347;
   color: white;
   padding: 12px 24px;
-  font-size: 1.2em;
+  font-size: 1.1em; /* Reduced font size */
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 20px;
   transition: background 0.3s ease, transform 0.3s ease;
 }
+
 .home-text .btn:hover {
   background: #e5533d;
   transform: scale(1.05);
@@ -165,14 +167,14 @@ html {
 .mySlides {
   display: none;
   position: relative;
-  text-align: center; /* Center the images */
+  text-align: center;
 }
 
 .mySlides img {
-  max-width: 60%; /* Limit the width of the images to 60% */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center images */
-  border-radius: 8px; /* Optional: add rounded corners to images */
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 .fade {
@@ -283,29 +285,27 @@ footer {
 }
 
 /* View on GitHub Button (No Underline) */
-/* General Button */
 .btn {
-  background: #ff6347; /* Tomato red background */
-  color: white; /* White text */
+  background: #ff6347;
+  color: white;
   padding: 12px 24px;
-  font-size: 1.2em;
+  font-size: 1.1em; /* Reduced font size */
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 20px; /* Adds spacing */
+  margin-top: 20px;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* Button hover effect */
 .btn:hover {
-  background: #e5533d; /* Darker red on hover */
+  background: #e5533d;
   transform: scale(1.05);
 }
 
 /* GitHub Button */
 .btn-github {
-  background: #333; /* Dark background */
+  background: #333;
   color: white;
   padding: 10px 20px;
   font-size: 1em;
@@ -315,9 +315,8 @@ footer {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* GitHub button hover effect */
 .btn-github:hover {
-  background: #242424; /* Slightly darker hover effect */
+  background: #242424;
   transform: scale(1.05);
 }
 
@@ -326,7 +325,7 @@ footer {
   background-color: #ff6347;
   color: white;
   padding: 10px 20px;
-  font-size: 1.1em;
+  font-size: 1em; /* Reduced font size */
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
