@@ -32,7 +32,13 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+ let username = "";
 
+function saveUsername(){
+  username = document.getElementById("usernameInput").value;
+  const welcomeMsg = document.getElementById("welcomemsg");
+welcomeMsg.textContent += (username === ""?'Guest' : username);
+}
 /* Optional: Automatic Slideshow
 let autoSlideIndex = 0;
 autoShowSlides();
@@ -48,3 +54,4 @@ function autoShowSlides() {
   setTimeout(autoShowSlides, 5000); // Change slide every 5 seconds
 }
 */
+
